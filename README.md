@@ -2,7 +2,7 @@
 
 I usually try to avoid Google products for privacy reasons. But they have one product that became widespread like cancer figuratively and literally, **reCaptcha**. It's just an illusion of security which destroys all usability.
 
-This project uses [AntiCaptcha API](https://anti-captcha.com/) for solve and bypass reCaptcha. Since defeating reCaptcha's audio challenges is not [hard to implement](https://github.com/ecthros/uncaptcha), Google usually doesn't allow you to [use it.](https://instaud.io/1ZAC) This projects aims to help people with disabilities and people who are tired of solving challenges.
+This project uses [AntiCaptcha API](https://anti-captcha.com/) for solve and bypass reCaptcha. Since defeating reCaptcha's audio challenges is not [hard to implement](https://github.com/ecthros/uncaptcha), Google usually doesn't allow you to [use it.](https://instaud.io/1ZAC) This project aims to help people with disabilities and people who tired of solving challenges.
 
 ## How it works
 
@@ -38,7 +38,7 @@ Website -->> Website: Result
 
 ## Installation
 
-Right now we don't have any releases. So fork this repo, edit `YourAntiCaptchaKey` in `background.js`. Go to`about:debugging` and install it from there.
+Right now we don't have any releases. So fork this repo, edit `YourAntiCaptchaKey` in [background.js](https://github.com/farukuzun/AntiCaptchaFF/blob/master/scripts/background/background.js). Go to`about:debugging` and install it from there.
 
 ## Usage
 
