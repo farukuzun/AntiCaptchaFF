@@ -6,21 +6,7 @@ This project uses [AntiCaptcha API](https://anti-captcha.com/) for solve and byp
 
 ## How it works
 
-```mermaid
-sequenceDiagram
-Google ->> Website: sitekey
-AntiCaptchaFF -->> Website: takes sitekey
-AntiCaptchaFF -->> AntiCaptcha Api: sends sitekey and url
-AntiCaptcha Api ->> AntiCaptchaFF: taskid
-AntiCaptchaFF --> AntiCaptchaFF: wait 5-10 seconds
-AntiCaptchaFF -->> AntiCaptcha Api: gettaskresult
-AntiCaptcha Api ->> AntiCaptchaFF: gRecaptchaResponse
-AntiCaptchaFF -->> Website: gRecaptchaResponse
-Website -->> Website: Form Post
-Website ->> Google: Is gRecaptchaResponse correct?
-Google ->> Website: True
-Website -->> Website: Result
-```
+![how it works](https://raw.githubusercontent.com/farukuzun/AntiCaptchaFF/master/mermaid_output.png)
 
 ## Roadmap
 
