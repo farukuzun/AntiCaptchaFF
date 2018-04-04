@@ -1,0 +1,95 @@
+.enableLoader {
+    pointer-events: none;
+    opacity: 0.5;
+    background: #f9f7f7;
+}
+.disableLoader {
+    pointer-events: none;
+    opacity: 0.1;
+    background: #000000;
+}
+
+.disableLoader h2 {
+  color: black;
+  font-size: 30px;
+}
+.body {
+ min-width:80px;
+}
+.switch-toggle {
+padding:25px;
+}
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+    bottom:5px;
+    left:29px;
+    top: 15px;
+}
+.on {
+    float: right;
+    font-size: 10px;
+    margin-right: -22px;
+    margin-top: -13px;
+}
+.off {
+    float: left;
+    font-size: 10px;
+    margin-left: -26px;
+    margin-top: -13px;
+}
+#popup-switch {
+    display: block;
+}
+
+#popup-switch:checked + .slider {
+    background-color: #4cd964;
+}
+
+#popup-switch:focus + .slider {
+    box-shadow: 0 0 1px #4cd964;
+}
+
+#popup-switch:checked + .slider:before {
+    -o-transform: translateX(14px);
+    -webkit-transform: translateX(14px);
+    transform: translateX(14px);
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -o-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-border-radius: 34px;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    bottom: 1px;
+    background-color: white;
+    -o-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.dashboard {
+    border-top: 1px solid;
+    margin-top: -16px;
+}
+.txt {
+    margin-top: 1px;
+}

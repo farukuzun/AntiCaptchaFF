@@ -1,0 +1,72 @@
+{
+  "name": "AntiCaptchaFF",
+  "description": "Automatically solve and bypass reCaptcha",
+  "version": "0.0.1",
+  "manifest_version": 1,
+  "icons": {
+    "19": "resources/images/recaptcha-png.png",
+    "32": "resources/images/recaptcha-png.png",
+    "128": "resources/images/recaptcha-png.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "resources/images/recaptcha-png.png",
+      "32": "resources/images/recaptcha-png.png",
+      "128": "resources/images/recaptcha-png.png"
+    },
+    "default_title": "Captcha Solve",
+    "default_popup": "html/popup.html"
+  },
+  "permissions": [
+    "identity",
+    "tabs",
+    "storage",
+    "notifications",
+    "<all_urls>",
+    "https://*/*",
+    "activeTab"
+  ],
+  "background": {
+    "scripts": [
+      "scripts/vendor/jquery-3.2.1.min.js",
+      "scripts/background/background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "js": [
+        "scripts/vendor/jquery-3.2.1.min.js",
+        "scripts/vendor/arrive.min.js",
+        "scripts/contentscript/config.js",
+        "scripts/contentscript/contentscript.js"
+      ],
+      "css": [
+        "css/popup.css"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources": [
+    "resources/images/*",
+    "html/*"
+  ],
+  "applications": {
+    "gecko": {
+      "id": "addon@example.com",
+      "strict_min_version": "42.0"
+    }
+  },
+  "commands": {
+    "toggle-feature": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+9"
+      },
+      "global": true
+    }
+  }
+}
