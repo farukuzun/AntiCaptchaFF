@@ -2,7 +2,7 @@
   "name": "AntiCaptchaFF",
   "description": "Automatically solve and bypass reCaptcha",
   "version": "0.0.1",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "icons": {
     "19": "resources/images/recaptcha-png.png",
     "32": "resources/images/recaptcha-png.png",
